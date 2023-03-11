@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    background: url(4-153-2048x1280.jpg) center / cover no-repeat;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.container {
+    display: flex;
+    width: 70vw;
+    justify-content: space-between;
+    margin: 10vh auto 0;
+    text-align: center;
+}
+
+.title {
+    font-size: 6vw;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    margin-top: 50px;
+}
+
+.item {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 7vw;
+    line-height: 4vw;
+}
+
+.container-2 {
+    width: 70vw;
+    display: flex;
+    margin: 30px auto 0;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: 3vw;
+    width: 25%;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
