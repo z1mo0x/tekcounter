@@ -1,6 +1,5 @@
 const items = document.querySelectorAll('.item');
-let timer = new Date(2023, 3, 1, 23, 35, 0).getTime();
-// let timer = new Date(2023, 6, 5, 8, 30, 0).getTime();
+let timer = new Date(2023, 6, 5, 8, 30, 0).getTime();
 
 
 function countDown() {
@@ -24,14 +23,12 @@ function countDown() {
         item.textContent = values[index];
     });
 
-    // if (distance < 0) {
-    //     clearInterval(counter);
-    // }
+    if (distance < 0) {
+        clearInterval(counter); document.querySelector('.container').innerHTML = 'Время вышло'
+    }
 
-}
+    document.title = values[0] + ' Дней ' + values[1] + ' Часов ' + values[2] + ' Минут ' + values[3] + ' Секунд ';
+};
 
-let counter = setInterval(countDown, 1000)
+let counter = setInterval(countDown, 1000);
 
-
-
-// document.title = countdown;
