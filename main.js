@@ -1,5 +1,6 @@
 const items = document.querySelectorAll('.item');
-let timer = new Date(2023, 6, 5, 8, 30, 0).getTime();
+let timer = new Date(2023, 3, 1, 23, 35, 0).getTime();
+// let timer = new Date(2023, 6, 5, 8, 30, 0).getTime();
 
 
 function countDown() {
@@ -21,12 +22,15 @@ function countDown() {
 
     items.forEach((item, index) => {
         item.textContent = values[index];
-        console.log(values[index]);
     });
+
+    // if (distance < 0) {
+    //     clearInterval(counter);
+    // }
 
 }
 
-setInterval(countDown, 1000)
+let counter = setInterval(countDown, 1000)
 
 
 
